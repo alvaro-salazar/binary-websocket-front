@@ -1,27 +1,63 @@
-# BinaryWebsocketFront
+# README - Aplicación de Gráfico en Tiempo Real con WebSocket
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+Esta es una sencilla aplicación Angular que demuestra la visualización de datos en tiempo real utilizando WebSocket para datos binarios. La aplicación te permite enviar y recibir datos binarios y mostrarlos en un gráfico en tiempo real.
 
-## Development server
+## Tabla de Contenidos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Introducción](#introducción)
+- [Características](#características)
+- [Instrucciones de Inicio](#instrucciones-de-inicio)
+- [Uso](#uso)
+- [Limpieza](#limpieza)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
 
-## Code scaffolding
+## Introducción
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+WebSocket es un protocolo que permite la comunicación en tiempo real entre un cliente y un servidor. En esta aplicación, utilizamos WebSocket para establecer una conexión entre el cliente Angular y el servidor, lo que permite el intercambio en tiempo real de datos binarios. El servidor envía datos binarios simulados en forma de una onda senoidal al cliente, y el cliente los muestra en un gráfico en tiempo real.
 
-## Build
+## Características
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Visualización de Datos en Tiempo Real:** La aplicación proporciona un gráfico en tiempo real que se actualiza a medida que se reciben datos binarios del servidor.
+- **Comunicación WebSocket:** Establece una conexión WebSocket para recibir y enviar datos binarios al servidor.
+- **Gráfico de Datos:** La aplicación utiliza la biblioteca Chart.js para crear y actualizar un gráfico en tiempo real para la visualización de datos.
 
-## Running unit tests
+## Instrucciones de Inicio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Sigue estos pasos para poner en funcionamiento la aplicación en tu máquina local:
 
-## Running end-to-end tests
+1. **Clonar el Repositorio:** Comienza por clonar el repositorio en tu máquina local.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```shell
+   git clone <url-del-repositorio>
+2. Instalar Dependencias: Navega hasta el directorio del proyecto e instala las dependencias requeridas mediante npm.
+``` shell
+cd aplicacion-grafico-tiempo-real
+npm install
+```
+3. Ejecutar la Aplicación: Inicia el servidor de desarrollo Angular para lanzar la aplicación.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Acceder a la Aplicación: Una vez que el servidor esté en funcionamiento, abre tu navegador web y accede a la aplicación en http://localhost:4200.
+
+
+## Uso
+Al acceder a la aplicación, verás un gráfico en tiempo real con un botón "Enviar Datos Binarios".
+Haz clic en el botón "Enviar Datos Binarios" para enviar datos binarios al servidor. Los datos recibidos se mostrarán en tiempo real en el gráfico.
+
+## Tecnologías Utilizadas
+- Angular: Un popular marco de aplicaciones web basado en TypeScript.
+- WebSocket: Para la comunicación bidireccional en tiempo real.
+- Chart.js: Una biblioteca JavaScript para crear gráficos interactivos.
+
+## Contribución
+¡Las contribuciones son bienvenidas! Si deseas mejorar la aplicación o corregir problemas, sigue estos pasos:
+
+## Haz un fork del repositorio.
+1. Crea una nueva rama para tu función o corrección.
+2. Realiza tus cambios y regístralos.
+3. Crea una solicitud de extracción hacia la rama main.
+
+## Licencia
+Esta aplicación es de código abierto y está disponible bajo la Licencia MIT.
