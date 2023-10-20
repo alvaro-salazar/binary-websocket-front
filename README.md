@@ -1,17 +1,8 @@
-# README - Aplicación de Gráfico en Tiempo Real con WebSocket
+# Aplicación Angular de Gráfico en Tiempo Real con WebSocket Binario
 
 Esta es una sencilla aplicación Angular que demuestra la visualización de datos en tiempo real utilizando WebSocket para datos binarios. La aplicación te permite enviar y recibir datos binarios y mostrarlos en un gráfico en tiempo real.
+Este front-end debe usarse en conjunto con el back-end realizado en Spring Boot: [back-end](https://github.com/alvaro-salazar/binary-websocket)
 
-## Tabla de Contenidos
-
-- [Introducción](#introducción)
-- [Características](#características)
-- [Instrucciones de Inicio](#instrucciones-de-inicio)
-- [Uso](#uso)
-- [Limpieza](#limpieza)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Introducción
 
@@ -36,10 +27,11 @@ Sigue estos pasos para poner en funcionamiento la aplicación en tu máquina loc
 cd aplicacion-grafico-tiempo-real
 npm install
 ```
-3. Ejecutar la Aplicación: Inicia el servidor de desarrollo Angular para lanzar la aplicación.
+3. Clone y ejecute el back-end realizado en Spring Boot. [back-end](https://github.com/alvaro-salazar/binary-websocket)
 
+4. Ejecutar la Aplicación: Inicia el servidor de desarrollo Angular para lanzar la aplicación.
 
-4. Acceder a la Aplicación: Una vez que el servidor esté en funcionamiento, abre tu navegador web y accede a la aplicación en http://localhost:4200.
+5. Acceder a la Aplicación: Una vez que el servidor esté en funcionamiento, abre tu navegador web y accede a la aplicación en http://localhost:4200.
 
 
 ## Uso
